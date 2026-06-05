@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
+    <script>
+const name = prompt("Введіть ім'я:");
+alert("Привіт, " + name + "!");
+
+const CURRENT_YEAR = 2026;
+const year = prompt("Введіть рік народження:");
+alert(CURRENT_YEAR - year);
+
+const side = prompt("Введіт ь сторону квадрата:");
+alert(side * 4);
+
+const radius = prompt("Введіть радіус кола:");
+alert(3.14 * radius * radius);
+
+const dist = prompt("Введіть відстань в км:");
+const time = prompt("Введіть час в годинах:");
+alert(dist / time);
+
+const RATE = 0.92;
+const usd = prompt("Введіть долари:");
+alert(usd * RATE);
+
+const gb = prompt("Введіть ГБ флешки:");
+alert(((gb * 1024) / 820));
+
+const wallet = prompt("Сума в гаманці:");
+const price = prompt("Вартість шоколадки:");
+alert("Шоколадок: " + (wallet / price) + ", здача: " + (wallet % price));
+
+const num = prompt("Введіть тризначне число:");
+const digit1 = num % 10;
+const digit2 = (num / 10) % 10;
+const digit3 = (num / 100);
+alert("" + digit1 + digit2 + digit3);
+
+const checkNum = prompt("Введіть ціле число:");
+alert((checkNum % 2 === 0 && "Парне") || "Непарне");
+    </script>
+
+</body>
+</html>
